@@ -10,6 +10,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserService } from './user.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
@@ -17,7 +18,8 @@ import { MessageService } from './message.service';
     AppComponent,
     UsersComponent,
     UserDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   bootstrap: [AppComponent],
   providers: [UserService, MessageService]
