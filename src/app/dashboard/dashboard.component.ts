@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
     this.getUsers();
   }
   getUsers(): void {
-    this.userService.getUsers().subscribe(users => this.users = users.slice(0, 5));
+    this.userService.getUsers().subscribe(users => this.users = users.slice(0, 8));
   }
 
 }
