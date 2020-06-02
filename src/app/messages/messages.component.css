@@ -6,7 +6,21 @@ h2 {
 body {
   margin: 2em;
 }
+div.msg_box{
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 10px;
+}
 
+div.msg_content {
+  position: relative;
+  margin: 0 auto 0;
+  width: 70%;
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 2px #8ad dashed;
+}
 body,input[text], button{
   color: crimson;
   font-family: Cambria, Cochin, Georgia;

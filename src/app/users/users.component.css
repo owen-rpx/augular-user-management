@@ -19,19 +19,23 @@
   height: 1.6em;
   border-radius: 4px;
 }
-.users li.selected:hover{
-  background-color:  #BBD8DC !important;
-  color: white;
-}
+ 
 .users li:hover{
   color: #607D8B;
   background-color: #DDD;
   left: .1em;
 }
-.users .text {
+.users a {
   position: relative;
-  top: -3px;
+  display: block;
+  width: 250px;
+  color: #888;
+  text-decoration: none;
 }
+.users a:hover{
+  color: #607D8B;
+}
+
 .users .badge {
   display: inline-block;
   font-size: small;
@@ -45,4 +49,5 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+  min-width: 16px;
 }

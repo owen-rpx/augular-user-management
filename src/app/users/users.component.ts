@@ -9,8 +9,7 @@ import { UserService } from '../user.service';
 })
 export class UsersComponent implements OnInit {
   users: User[];
-  selectedUser: User;
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.getUsers();
@@ -18,10 +17,5 @@ export class UsersComponent implements OnInit {
 
   getUsers(): void {
     this.userService.getUsers().subscribe(users => (this.users = users));
-  }
-
-  onSelect(user: User): void {
-    console.log(user);
-    this.selectedUser = user;
   }
 }
